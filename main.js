@@ -50,7 +50,7 @@ function removeBook(index){ /** this is targetting the selected array index, and
 
 /** Using a prototype to toggle read status **/
 
-
+/** Prototype type is done so that every book that is created will have the option of having it's button toggled **/
 Book.prototype.toggleRead = function(){
     this.completion = !this.completion; //meaning, if it is read and clicked, it will become not read, and vice versa
 }
