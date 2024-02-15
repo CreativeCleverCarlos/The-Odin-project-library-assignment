@@ -23,19 +23,32 @@
             </div>
         </section>
         <section>
-            <form onsubmit="return setAction(this)"></form> <!--To be updated later-->
-                <div class="form-slip">
-                    <label>Title:</label>
-                    <input type="text" id="title" name="title" placeholder="The Beginning After The End">
-                    <label>Author:</label>
-                    <input type="text" id="author" name="author" placeholder="Turtleme">
-                    <label>Total Pages:</label>
-                    <input type="number" id="pages" name="pages" placeholder="582">
-                    <label>Completed:</label>
-                    <input type="text" id="completed" name="completed" placeholder="Ongoing">
-                    <button type="submit">Update your Library</button>
+            <button class="button" id="new-book-button">New Book</button>
+            <form id="new-book-form"> <!--To be updated later-->
+                <div class="form-slip"> <!--For adding in a new book-->
+                    <h2>Add a new book</h2>
+                    <div class="form-row">
+                        <label>Title:</label>
+                        <input type="text" id="title" name="title" placeholder="The Beginning After The End">
+                    </div>
+                    <div class="form-row">
+                        <label>Author:</label>
+                        <input type="text" id="author" name="author" placeholder="Turtleme">
+                    </div>
+                    <div class="form-row">
+                        <label>Total Pages:</label>
+                        <input type="number" id="pages" name="pages" placeholder="582">
+                    </div>
+                    <div class="form-row">
+                        <label>Completed:</label>
+                        <input type="text" id="completed" name="completed" placeholder="Ongoing">
+                    </div>
+                    <div class="form-button-row"> <button type="submit" class="button">Update your Library</button></div>
+                   
                 </div>
+                </form>
         </section>
+        <div id="library"></div>
     </main>
 </body>
     <script type="text/javascript" src="main.js"></script>

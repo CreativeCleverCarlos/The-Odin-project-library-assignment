@@ -1,11 +1,8 @@
 
 .form-slip{  
-    width: 100%;
-    padding: .5%;
-    margin: 8px 0;
-    display: inline-block;
+    max-width: 50em;
+    display: block;
     border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
 }
 
@@ -17,3 +14,23 @@
     flex-direction: row;
 }
 
+.button{
+    background-color: lightblue;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+#new-book-form{ /** To keep the form hidden until it is clicked on **/
+    display: none;
+}
+
+.form-slip h2{
+    text-align: center;
+}
+
+.form-row, .form-button-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
